@@ -17,4 +17,10 @@ public class CatalogueController {
         return catalogueService.createStudentCatalogue();
     }
 
+    @GetMapping("/rank")
+    public String getRankedStudents(){
+
+        return catalogueService.returnRank();
+    }
+
 }
